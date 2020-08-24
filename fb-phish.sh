@@ -1,14 +1,15 @@
 #!bin/bash
 clear
 printf "\e[34m"
-echo -e "      __   _               _ __    _       _         _     "
-echo -e "     / _| | |__           | '_ \  | |__   (_)  ___  | |__  "
-echo -e "    | |_  | '_ \   _____  | |_) | | '_ \  | | / __| | '_ \ "
-echo -e "    |  _| | |_) | |_____| | .__/  | | | | | | \__ \ | | | |"
-echo -e "    |_|   |_.__/          |_|     |_| |_| |_| |___/ |_| |_|"                                                       
-echo -e "\e[0m"
+echo -e "     __ _                 _     _     _     "
+echo -e "    / _| |__        _ __ | |__ (_)___| |__  "
+echo -e "   | |_| '_ \ _____| '_ \| '_ \| / __| '_ \ "
+echo -e "   |  _| |_) |_____| |_) | | | | \__ \ | | |"
+echo -e "   |_| |_.__/      | .__/|_| |_|_|___/_| |_|"
+echo -e "                   |_|                      "
+echo -e ""
 sleep 2
-echo -e "\e[0m       facebook: https://facebook.com/tutorialmaniabd"
+echo -e "\e[0m     facebook: https://facebook.com/tutorialmaniabd"
 sleep 5
 echo -e ""
 command -v php > /dev/null 2>&1 || { echo >&2 "I require php but it's not installed. Install it: apt-get install php. Aborting."; exit 1; }
