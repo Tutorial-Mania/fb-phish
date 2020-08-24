@@ -17,21 +17,14 @@ if [[ -e ngrok ]]; then
 chmod +x ngrok
 echo -e "\e[92mNgrok Found\e[97m \n"
 elif [[ ! -e ngrok ]]; then
-printf "\e[92m Ngrok not found. Downloading Ngrok...\e[0m"
-elif [[ -e ngrok-stable-linux-arm.zip ]]; then
-apt-get install unzip -y
-unzip ngrok-stable-linux-arm.zip
-chmod +x ngrok
-rm -rf ngrok-stable-linux-arm.zip
-echo "Done"
-elif [[ ! -e ngrok-2.2.8-linux-arm.zip ]]; then
+echo -e "\e[92m Ngrok not found. Downloading Ngrok...\e[0m"
 apt-get install wget -y
 apt-get install unzip -y
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip
 unzip ngrok-stable-linux-arm.zip
 chmod +x ngrok
 rm -rf ngrok-stable-linux-arm.zip
-echo -e " \e[92m Ngrok Found\e[97m"
+echo -e "\e[92mNgrok Found\e[97m"
 else
 printf "\e[1;93m[!] Download error...\e[0m\e[1;77m Please cheack your internet connection.\e[0m\n"
 exit 1
